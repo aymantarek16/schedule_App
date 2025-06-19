@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-light: #f9fafb;
+  --background-dark: #111827;
+}
+
+body {
+  background-color: var(--background-light) !important;
+  transition: background-color 0.3s ease;
+}
+
+.dark body {
+  background-color: var(--background-dark) !important;
+}
+
