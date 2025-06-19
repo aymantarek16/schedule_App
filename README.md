@@ -20,5 +20,5 @@ A clean and modern appointment scheduling app built with **Next.js 15** and **Ta
 
 ## 📸 Screenshots
 
-![Schedule Screenshot](./Shedule.png)
+![Schedule Screenshot](https://res.cloudinary.com/dsj56djsq/image/upload/v1750368232/Images%20of%20my%20Projects/Next.js/Shedule_eabqea.png)
 
