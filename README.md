@@ -1,6 +1,6 @@
 # 🗓️ Schedule App
 
-A clean and modern appointment scheduling app built with **Next.js 15** and **Tailwind CSS**, offering dark mode support, status filtering, and full CRUD operations for managing your events.
+A clean and modern appointment scheduling app built with **Next.js 15** and **Tailwind CSS**, status filtering, and full CRUD operations for managing your events.
 
 ## ✨ Features
 
