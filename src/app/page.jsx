@@ -8,7 +8,7 @@ export default function Home() {
   const [filter, setFilter] = useState('all');
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900">
+    <div className="min-h-screen bg-white">
       <Header onAddClick={() => setShowForm(true)} onFilterChange={setFilter} />
       <div className="pt-16">
         <AppointmentList

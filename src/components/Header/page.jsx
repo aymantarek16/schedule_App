@@ -12,7 +12,7 @@ export default function Header({ onAddClick, onFilterChange }) {
   const filters = ['all', 'pending', 'completed', 'missed'];
 
   return (
-    <nav className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 fixed w-full top-0 z-50">
+    <nav className="bg-white border-b border-gray-200 fixed w-full top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           {/* Logo */}
@@ -21,7 +21,7 @@ export default function Header({ onAddClick, onFilterChange }) {
               <svg className="h-8 w-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
-              <span className="ml-2 text-xl font-semibold text-gray-900 dark:text-white">Schedule</span>
+              <span className="ml-2 text-xl font-semibold text-gray-900">Schedule</span>
             </div>
           </div>
 
@@ -35,7 +35,7 @@ export default function Header({ onAddClick, onFilterChange }) {
                   className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-150
                     ${activeFilter === f
                       ? 'bg-blue-500 text-white'
-                      : 'text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700'}`}
+                      : 'text-gray-700 hover:bg-gray-100'}`}
                 >
                   {f.charAt(0).toUpperCase() + f.slice(1)}
                 </button>
