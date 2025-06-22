@@ -60,11 +60,12 @@ export default function AppointmentForm({ onClose, onSubmit, initialData = null 
 
           <div>
             <label className={labelClass}>Status</label>
-            <select
-              value={formData.status}
-              onChange={(e) => setFormData({ ...formData, status: e.target.value })}
-              className={inputClass}
-            >
+        <select
+  value={formData.status}
+  onChange={(e) => setFormData({ ...formData, status: e.target.value })}
+  className={`${inputClass} pr-10`}
+>
+
               <option value="pending">Pending</option>
               <option value="completed">Completed</option>
               <option value="missed">Missed</option>

@@ -89,8 +89,21 @@ export default function AppointmentList({ showForm, setShowForm, filter }) {
                       </span>
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                      <button onClick={() => handleEdit(a)} className="text-blue-300 hover:text-blue-500 mr-4">Edit</button>
-                      <button onClick={() => handleDelete(a.id)} className="text-red-400 hover:text-red-600">Delete</button>
+                  <div className="flex space-x-2">
+  <button
+    onClick={() => handleEdit(a)}
+    className="px-4 py-1 text-sm font-medium text-white rounded-md bg-gradient-to-r from-blue-500 to-blue-700 hover:from-green-400 hover:to-green-600 focus:outline-none transition-all duration-300 cursor-pointer"
+  >
+    Edit
+  </button>
+  <button
+    onClick={() => handleDelete(a.id)}
+    className="px-4 py-1 text-sm font-medium text-white rounded-md bg-gradient-to-r from-red-500 to-red-700 hover:from-red-600 hover:to-red-800 focus:outline-none transition-all duration-300 cursor-pointer"
+  >
+    Delete
+  </button>
+</div>
+
                     </td>
                   </tr>
               ))}
