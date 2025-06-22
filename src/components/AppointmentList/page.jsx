@@ -16,6 +16,9 @@ export default function AppointmentList({ showForm, setShowForm, filter }) {
     return () => unsubscribe();
   }, []);
 
+  // function to repeat style class on other components
+  const PaddingState = "py-1 px-3"
+
   const handleAddEdit = async (data) => {
     if (editingAppointment) {
       const ref = doc(db, "appointments", editingAppointment.id);
@@ -40,9 +43,9 @@ export default function AppointmentList({ showForm, setShowForm, filter }) {
 
   const getStatusColor = (status) => {
     switch (status) {
-      case "completed": return "bg-green-100 text-green-800";
-      case "pending": return "bg-yellow-100 text-yellow-800";
-      case "missed": return "bg-red-100 text-red-800";
+      case "completed": return `bg-green-100 text-green-800 ${PaddingState}`;
+      case "pending": return `bg-yellow-100 text-yellow-800  ${PaddingState}`;
+      case "missed": return `bg-red-100 text-red-800  ${PaddingState}`;
       default: return "bg-gray-100 text-white";
     }
   };
