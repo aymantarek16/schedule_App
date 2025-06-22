@@ -4,19 +4,24 @@ A clean and modern appointment scheduling app built with **Next.js 15** and **Ta
 
 ## ✨ Features
 
-- ⚡ Fast and responsive UI with modern design
-- 📅 Add, edit, and delete appointments
-- 🔍 Filter appointments by status: `All`, `Pending`, `Completed`, `Missed`
-- 💾 Persistent data storage using browser `localStorage`
-- 📱 Fully responsive and mobile-friendly
+⚡ Fast and responsive UI with modern dark-themed design
+📅 Add, edit, and delete appointments in real-time
+🔍 Filter appointments by status: All, Pending, Completed, Missed
+☁️ Real-time data storage and sync using Firebase Firestore
+📱 Fully responsive and mobile-friendly interface
 
 ## 🚀 Tech Stack
 
-- **Framework:** Next.js 15 (App Router)
-- **Styling:** Tailwind CSS
-- **State Management:** React Hooks
-- **Persistence:** localStorage
-- **Font:** Geist Sans / Geist Mono (Google Fonts)
+Framework: Next.js 15 (App Router)
+
+Styling: Tailwind CSS
+
+State Management: React Hooks
+
+Backend & Persistence: Firebase Firestore
+
+Fonts: Geist Sans / Geist Mono (via Google Fonts)
+
 
 ## 📸 Screenshots
 
