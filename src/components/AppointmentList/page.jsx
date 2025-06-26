@@ -10,6 +10,8 @@ import {
 } from "firebase/firestore";
 import { db } from "../../lip/firebase";
 import AppointmentForm from "../AppointmentForm/page";
+import { toast } from "react-toastify";
+
 
 export default function AppointmentList({ showForm, setShowForm, filter }) {
   const [appointments, setAppointments] = useState([]);
@@ -42,11 +44,17 @@ export default function AppointmentList({ showForm, setShowForm, filter }) {
     setEditingAppointment(null);
   };
 
-  const handleDelete = async (id) => {
-    if (confirm("Are you sure you want to delete this appointment?")) {
+const handleDelete = async (id) => {
+  if (confirm("Are you sure you want to delete this appointment?")) {
+    try {
       await deleteDoc(doc(db, "appointments", id));
+      toast.success("Appointment deleted successfully!");
+    } catch (error) {
+      console.error("Delete error:", error);
+      toast.error("Failed to delete appointment.");
     }
-  };
+  }
+};
 
   const handleEdit = (appointment) => {
     setEditingAppointment(appointment);
